@@ -1,0 +1,59 @@
+{
+  "game": {
+    "id": "tic-tac-toe",
+    "name": "Tic-Tac-Toe",
+    "version": "1.0.0"
+  },
+  "board": {
+    "size": 3,
+    "cells": [
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""]
+    ]
+  },
+  "players": [
+    {
+      "id": "player_x",
+      "symbol": "X",
+      "displayName": "Player X"
+    },
+    {
+      "id": "player_o",
+      "symbol": "O",
+      "displayName": "Player O"
+    }
+  ],
+  "rules": {
+    "firstTurn": "X",
+    "allowOverwrite": false,
+    "winningLines": [
+      [[0, 0], [0, 1], [0, 2]],
+      [[1, 0], [1, 1], [1, 2]],
+      [[2, 0], [2, 1], [2, 2]],
+      [[0, 0], [1, 0], [2, 0]],
+      [[0, 1], [1, 1], [2, 1]],
+      [[0, 2], [1, 2], [2, 2]],
+      [[0, 0], [1, 1], [2, 2]],
+      [[0, 2], [1, 1], [2, 0]]
+    ]
+  },
+  "state": {
+    "currentTurn": "X",
+    "winner": null,
+    "isDraw": false,
+    "isGameOver": false
+  },
+  "moves": [
+    {
+      "moveNumber": 1,
+      "symbol": "X",
+      "position": [0, 0]
+    },
+    {
+      "moveNumber": 2,
+      "symbol": "O",
+      "position": [1, 1]
+    }
+  ]
+}
